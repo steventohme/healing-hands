@@ -1,13 +1,14 @@
 {
   "title": "Welcome to Healing Hands Medical Clinic",
-  "text": "We are commited to giving ",
+  "text": "We are commited to providing you the highest quality of care. To schedule an appointment press the button below. For more information about the clinic press the 'more info' button.",
   "button": [
     {
-      "title": "Explore"
+      "title": "Booking Portal",
+      "color": "#356fa4"
     },
     {
-      "title": "Learn more",
-      "color": "#fff"
+      "title": "More Info",
+      "color":"#4c9c55"
     }
   ]
 }

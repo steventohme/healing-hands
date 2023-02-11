@@ -34,24 +34,27 @@ const RightBlock = ({
               <h6>{t(title)}</h6>
               <Content>{t(content)}</Content>
               <ButtonWrapper>
-                {typeof button === "object" &&
-                  button.map((item: any, id: number) => {
-                    return (
-                      <Button
-                        key={id}
-                        color={item.color}
-                        fixedWidth={true}
-                        onClick={() => scrollTo("about")}
-                      >
-                        {t(item.title)}
-                      </Button>
-                    );
-                  })}
+                <Button
+                  key={id}
+                  color={button[0].color}
+                  fixedWidth={true}
+                  onClick={() => window.location.href='https://ocean.cognisantmd.com/intake/patients.html?linkRef=6861dd28-959f-4aec-948f-e031226e8b5b#/online-booking'}
+                  >
+                  {t(button[0].title)}
+                </Button>
+                <Button
+                  key={id}
+                  color={button[1].color}
+                  fixedWidth={true}
+                  onClick={() => scrollTo("about")} 
+                  >
+                    {t(button[1].title)}
+                  </Button>
               </ButtonWrapper>
             </ContentWrapper>
           </Col>
           <Col lg={11} md={11} sm={12} xs={24}>
-            <SvgIcon src={icon} width="100%" height="100%" />
+            <SvgIcon src={icon} width="120%" height="120%" />
           </Col>
         </Row>
       </Fade>
